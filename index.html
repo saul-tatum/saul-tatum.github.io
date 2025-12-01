@@ -186,8 +186,7 @@
 
     function goTo(index) {
       current = index % slides.length;
-      const step = 100 / slides.length;
-      document.querySelector('.slides').style.transform = `translateX(-${current * step}%)`;
+      document.querySelector('.slides').style.transform = `translateX(-${current * 100}%)`;
       dots.forEach((d, i) => d.classList.toggle('active', i === current));
       resetTimer();
     }
