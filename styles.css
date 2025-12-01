@@ -218,7 +218,7 @@ h1 {
   padding: 26px;
   box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
   display: grid;
-  gap: 18px;
+  gap: 22px;
 }
 
 .section-head {
@@ -227,6 +227,9 @@ h1 {
   gap: 24px;
   flex-wrap: wrap;
 }
+
+.section-head + .card { margin-top: 0; }
+#recent .card { margin-top: 12px; }
 
 h2 {
   margin: 0;
