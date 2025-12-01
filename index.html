@@ -50,36 +50,13 @@
         <p>Quick look at what I have shipped lately. Swap in project images and links.</p>
         <a class="ghost-button" href="projects.html">All projects</a>
       </div>
-      <div class="slider" aria-label="Recent projects slideshow">
-        <div class="slides">
-          <article class="slide">
-            <div class="slide-media" style="background-image: url('assets/project-recent-1.jpg');"></div>
-            <div class="pill">2025 - Case study</div>
-            <h3>Workflow orchestrator</h3>
-            <p>Designed an end-to-end orchestration UI with live status, audit trails, and guided setup.</p>
-            <div class="meta">Product design - Frontend build</div>
-          </article>
-          <article class="slide">
-            <div class="slide-media" style="background-image: url('assets/project-recent-2.jpg');"></div>
-            <div class="pill">2024 - Web</div>
-            <h3>Studio marketing site</h3>
-            <p>Launched a fast, story-driven site with modular sections, subtle motion, and easy CMS updates.</p>
-            <div class="meta">Next.js - Design system</div>
-          </article>
-          <article class="slide">
-            <div class="slide-media" style="background-image: url('assets/project-recent-3.jpg');"></div>
-            <div class="pill">2024 - Experiment</div>
-            <h3>Interactive research hub</h3>
-            <p>Prototyped an insights hub with filters, saved views, and animated narratives for stakeholders.</p>
-            <div class="meta">Prototype - Data viz</div>
-          </article>
-        </div>
-        <div class="slider-controls" role="group" aria-label="Slide controls">
-          <button class="dot" aria-label="Slide 1" data-index="0"></button>
-          <button class="dot" aria-label="Slide 2" data-index="1"></button>
-          <button class="dot" aria-label="Slide 3" data-index="2"></button>
-        </div>
-      </div>
+      <article class="card">
+        <div class="card-media" style="background-image: url('assets/project-recent-1.jpg');"></div>
+        <div class="pill">2025 - Case study</div>
+        <h3>Workflow orchestrator</h3>
+        <p>Designed an end-to-end orchestration UI with live status, audit trails, and guided setup.</p>
+        <div class="meta">Product design - Frontend build</div>
+      </article>
     </section>
 
     <section id="work" class="section">
@@ -177,33 +154,5 @@
     <span>(c) 2025 Saul Tatum</span>
     <span>Design + code by me</span>
   </footer>
-
-  <script>
-    const slides = document.querySelectorAll('.slide');
-    const dots = document.querySelectorAll('.dot');
-    let current = 0;
-    let timer;
-
-    function goTo(index) {
-      current = index % slides.length;
-      document.querySelector('.slides').style.transform = `translateX(-${current * 100}%)`;
-      dots.forEach((d, i) => d.classList.toggle('active', i === current));
-      resetTimer();
-    }
-
-    function next() { goTo((current + 1) % slides.length); }
-
-    function resetTimer() {
-      clearInterval(timer);
-      timer = setInterval(next, 7500);
-    }
-
-    dots.forEach(dot => dot.addEventListener('click', (e) => {
-      const idx = Number(e.currentTarget.dataset.index);
-      goTo(idx);
-    }));
-
-    goTo(0);
-  </script>
 </body>
 </html>
