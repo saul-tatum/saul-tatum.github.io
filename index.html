@@ -27,7 +27,7 @@
     <section class="hero">
       <div class="hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">Product designer · Frontend developer</p>
+          <p class="eyebrow">Product designer - Frontend developer</p>
           <h1>Building thoughtful digital experiences that feel polished and personal.</h1>
           <p class="lede">I blend clean interfaces with purposeful motion, shipping products that are fast to build and delightful to use.</p>
           <div class="cta-row">
@@ -38,7 +38,7 @@
         <div class="hero-portrait">
           <figure class="portrait-frame">
             <img src="assets/headshot.jpeg" alt="Headshot of Saul Tatum" loading="lazy">
-            <figcaption>Based in Austin · Open to product roles</figcaption>
+            <figcaption>Based in Austin - Open to product roles</figcaption>
           </figure>
         </div>
       </div>
@@ -54,24 +54,24 @@
         <div class="slides">
           <article class="slide">
             <div class="slide-media" style="background-image: url('assets/project-recent-1.jpg');"></div>
-            <div class="pill">2025 · Case study</div>
+            <div class="pill">2025 - Case study</div>
             <h3>Workflow orchestrator</h3>
             <p>Designed an end-to-end orchestration UI with live status, audit trails, and guided setup.</p>
-            <div class="meta">Product design · Frontend build</div>
+            <div class="meta">Product design - Frontend build</div>
           </article>
           <article class="slide">
             <div class="slide-media" style="background-image: url('assets/project-recent-2.jpg');"></div>
-            <div class="pill">2024 · Web</div>
+            <div class="pill">2024 - Web</div>
             <h3>Studio marketing site</h3>
             <p>Launched a fast, story-driven site with modular sections, subtle motion, and easy CMS updates.</p>
-            <div class="meta">Next.js · Design system</div>
+            <div class="meta">Next.js - Design system</div>
           </article>
           <article class="slide">
             <div class="slide-media" style="background-image: url('assets/project-recent-3.jpg');"></div>
-            <div class="pill">2024 · Experiment</div>
+            <div class="pill">2024 - Experiment</div>
             <h3>Interactive research hub</h3>
             <p>Prototyped an insights hub with filters, saved views, and animated narratives for stakeholders.</p>
-            <div class="meta">Prototype · Data viz</div>
+            <div class="meta">Prototype - Data viz</div>
           </article>
         </div>
         <div class="slider-controls" role="group" aria-label="Slide controls">
@@ -91,29 +91,29 @@
         <article class="card">
           <div class="card-media" style="background-image: url('assets/project-1.jpg');"></div>
           <div class="card-top">
-            <span class="pill">2025 · Design + Build</span>
+            <span class="pill">2025 - Design + Build</span>
             <h3>Portfolio refresh</h3>
             <p>A new personal site with expressive typography, live previews, and performance-first code.</p>
           </div>
-          <div class="meta">Figma · HTML/CSS · Motion</div>
+          <div class="meta">Figma - HTML/CSS - Motion</div>
         </article>
         <article class="card">
           <div class="card-media" style="background-image: url('assets/project-2.jpg');"></div>
           <div class="card-top">
-            <span class="pill">2024 · Product</span>
+            <span class="pill">2024 - Product</span>
             <h3>Insight dashboard</h3>
             <p>Crafted a modular analytics UI with real-time charts, keyboard navigation, and theming.</p>
           </div>
-          <div class="meta">React · TypeScript · Charts</div>
+          <div class="meta">React - TypeScript - Charts</div>
         </article>
         <article class="card">
           <div class="card-media" style="background-image: url('assets/project-3.jpg');"></div>
           <div class="card-top">
-            <span class="pill">2024 · Experiment</span>
+            <span class="pill">2024 - Experiment</span>
             <h3>Generative explorer</h3>
             <p>Built an interactive gallery that lets users steer AI outputs with tactile controls.</p>
           </div>
-          <div class="meta">Three.js · UX research · AI</div>
+          <div class="meta">Three.js - UX research - AI</div>
         </article>
       </div>
     </section>
@@ -174,7 +174,7 @@
   </main>
 
   <footer class="footer">
-    <span>© 2025 Saul Tatum</span>
+    <span>(c) 2025 Saul Tatum</span>
     <span>Design + code by me</span>
   </footer>
 
@@ -186,7 +186,8 @@
 
     function goTo(index) {
       current = index % slides.length;
-      document.querySelector('.slides').style.transform = `translateX(-${current * 100}%)`;
+      const step = 100 / slides.length;
+      document.querySelector('.slides').style.transform = `translateX(-${current * step}%)`;
       dots.forEach((d, i) => d.classList.toggle('active', i === current));
       resetTimer();
     }
