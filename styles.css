@@ -377,10 +377,12 @@ h2 {
   display: flex;
   transition: transform 0.5s ease;
   width: 100%;
+  overflow: hidden;
   flex-wrap: nowrap;
 }
 
 .slide {
+  flex: 0 0 100%;
   min-width: 100%;
   background: var(--panel);
   border: 1px solid var(--border);
