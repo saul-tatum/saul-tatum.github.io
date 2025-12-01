@@ -229,7 +229,7 @@ h1 {
 }
 
 .section-head + .card { margin-top: 0; }
-#recent .card { margin-top: 12px; }
+#recent .card { margin-top: 24px; }
 
 h2 {
   margin: 0;
