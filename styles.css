@@ -14,7 +14,10 @@
 
 * { box-sizing: border-box; }
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 130px;
+}
 
 body {
   margin: 0;
@@ -105,7 +108,7 @@ body {
 }
 
 .hero, .section {
-  scroll-margin-top: 120px;
+  scroll-margin-top: 130px;
 }
 
 .hero-grid {
@@ -247,6 +250,8 @@ h2 {
   display: grid;
   gap: 10px;
 }
+
+#recent .card { margin-top: 18px; }
 
 .card-media {
   width: 100%;
