@@ -229,8 +229,6 @@ h1 {
 }
 
 .section-head + .card { margin-top: 0; }
-#recent .card { margin-top: 14px; }
-
 h2 {
   margin: 0;
   font-family: 'Space Grotesk', 'Manrope', sans-serif;
@@ -262,7 +260,7 @@ h2 {
   gap: 10px;
 }
 
-#recent .card { margin-top: 18px; }
+#recent .card { margin-top: 12px; }
 
 .card-media {
   width: 100%;
