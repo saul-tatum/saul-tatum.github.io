@@ -260,15 +260,18 @@ h2 {
   gap: 8px;
 }
 
-#recent .card { margin-top: 12px; }
+  .card > h3 { margin: 2px 0 0; }
+  .card > p { margin: 2px 0 0; color: var(--muted); }
 
-.card-media {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  border-radius: calc(var(--radius) - 6px);
-  border: 1px solid var(--border);
-  background: linear-gradient(135deg, rgba(125,213,255,0.18), rgba(199,139,255,0.2));
-  background-size: contain;
+  #recent .card { margin-top: 12px; }
+
+  .card-media {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: calc(var(--radius) - 6px);
+    border: 1px solid var(--border);
+    background: linear-gradient(135deg, rgba(125,213,255,0.18), rgba(199,139,255,0.2));
+    background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
