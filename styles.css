@@ -224,12 +224,12 @@ h1 {
 .section-head {
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 24px;
   flex-wrap: wrap;
 }
 
 .section-head + .card { margin-top: 0; }
-#recent .card { margin-top: 18px; }
+#recent .card { margin-top: 14px; }
 
 h2 {
   margin: 0;
