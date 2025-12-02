@@ -218,7 +218,7 @@ h1 {
   padding: 26px;
   box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
   display: grid;
-  gap: 12px;
+  gap: 8px;
 }
 
 .section-head {
@@ -263,7 +263,7 @@ h2 {
   .card > h3 { margin: 2px 0 0; }
   .card > p { margin: 2px 0 0; color: var(--muted); }
 
-  #recent .card { margin-top: 12px; }
+#recent .card { margin-top: 0; }
 
   .card-media {
     width: 100%;
