@@ -218,7 +218,7 @@ h1 {
   padding: 26px;
   box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
   display: grid;
-  gap: 22px;
+  gap: 18px;
 }
 
 .section-head {
@@ -268,7 +268,8 @@ h2 {
   border-radius: calc(var(--radius) - 6px);
   border: 1px solid var(--border);
   background: linear-gradient(135deg, rgba(125,213,255,0.18), rgba(199,139,255,0.2));
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
 }
 
