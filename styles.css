@@ -372,7 +372,7 @@ h2 {
 .contact > div:first-child {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 6px;
 }
 
 .contact .cta-row { margin-top: auto; }
