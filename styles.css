@@ -375,6 +375,10 @@ h2 {
   gap: 2px;
 }
 
+.contact .lede {
+  margin-top: 2px;
+}
+
 .contact .cta-row { margin-top: auto; }
 
 .links {
