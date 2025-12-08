@@ -257,6 +257,7 @@ h2 {
   border: 1px solid var(--border);
   padding: 18px;
   display: grid;
+  grid-template-rows: auto 1fr auto;
   gap: 8px;
 }
 
@@ -296,6 +297,10 @@ h2 {
 .meta {
   color: var(--muted);
   font-size: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
 }
 
 .inline-link {
@@ -326,7 +331,7 @@ h2 {
   transform: translateY(-1px);
 }
 
-.meta .link-button { margin-left: 8px; }
+.meta .link-button { margin-left: 0; }
 
 .split {
   display: grid;
