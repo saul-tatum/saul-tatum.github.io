@@ -272,9 +272,10 @@ h2 {
     border-radius: calc(var(--radius) - 6px);
     border: 1px solid var(--border);
     background: linear-gradient(135deg, rgba(125,213,255,0.18), rgba(199,139,255,0.2));
-    background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
 }
 
 .card-top h3 { margin: 6px 0; }
@@ -298,9 +299,9 @@ h2 {
   color: var(--muted);
   font-size: 14px;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   gap: 8px;
+  flex-wrap: wrap;
 }
 
 .inline-link {
@@ -331,7 +332,7 @@ h2 {
   transform: translateY(-1px);
 }
 
-.meta .link-button { margin-left: 0; }
+.meta .link-button { margin-left: auto; }
 
 .split {
   display: grid;
