@@ -369,8 +369,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  min-height: 38px;
+  min-height: 40px;
   text-align: center;
 }
 
@@ -414,9 +413,10 @@ h2 {
 }
 
 .skill-tags {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
 }
 
 .skill-card .tag {
