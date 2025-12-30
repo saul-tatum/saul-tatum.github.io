@@ -409,6 +409,7 @@ h2 {
 
 .skill-tags {
   display: grid;
+  flex-wrap: wrap;
   gap: 10px;
 }
 
